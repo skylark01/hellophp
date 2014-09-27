@@ -9,6 +9,9 @@ services:
 env:
   - DISPLAY=:99.0
 
+addons:
+  firefox: "29.0"
+
 install:
   - composer install
 
