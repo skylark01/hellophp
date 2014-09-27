@@ -14,7 +14,7 @@ install:
 
 before_script:
   - mkdir -p shippable/testresults
-  - php -S localhost:3000 hello.php
+  - php -S localhost:3000 hello.php &
 
 script:
   - xvfb-run vendor/bin/codecept run --xml
