@@ -12,6 +12,9 @@ env:
 addons:
   firefox: "29.0"
 
+before_install:
+  - echo "Sleeping for a bit..." && sleep 60
+
 install:
   - composer install
 
